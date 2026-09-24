@@ -21,16 +21,19 @@
   /* Hero copy, sits above the canvas */
   .kg-copy{
     position:absolute;left:clamp(20px,5vw,72px);right:clamp(20px,5vw,72px);top:50%;transform:translateY(-50%);
-    z-index:1;max-width:1100px;color:#fff;
+    z-index:1;max-width:1500px;color:#fff;
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
     text-shadow:0 1px 18px rgba(40,32,24,.18);
   }
-  .kg-copy h1{margin:0;font-weight:400;font-size:clamp(40px,7vw,104px);line-height:1.05;letter-spacing:-.015em}
-  .kg-copy p{margin:28px 0 0;font-size:clamp(17px,2vw,30px);line-height:1.45;font-weight:400;max-width:34em}
-  .kg-meta{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:34px;font-size:clamp(14px,1.5vw,22px);list-style:none;padding:0}
+  .kg-copy h1{margin:0;font-weight:400;font-size:clamp(44px,10vw,150px);line-height:1.05;letter-spacing:-.015em}
+  .kg-copy p{margin:36px 0 0;font-size:clamp(20px,2.8vw,42px);line-height:1.45;font-weight:400;max-width:34em}
+  .kg-meta{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:44px;font-size:clamp(17px,2.1vw,30px);list-style:none;padding:0}
   .kg-meta li{display:inline-flex;align-items:center;gap:12px}
   .kg-meta svg{width:1.05em;height:1.05em;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  @media (max-width:720px){ .kg-copy{top:auto;bottom:80px;transform:none} }
+  @media (max-width:720px){
+    .kg-copy{top:auto;bottom:80px;transform:none}
+    .kg-copy h1{font-size:40px} .kg-copy p{font-size:17px} .kg-meta{font-size:14px}
+  }
 
 
 </style>
